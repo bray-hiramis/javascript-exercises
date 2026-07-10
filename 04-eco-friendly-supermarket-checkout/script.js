@@ -1,3 +1,5 @@
+// Array
+
 function checkout(scannedItems, basketItems, mysteryItem) {
 
    const secretItem = "Eco-Tote Bag";
