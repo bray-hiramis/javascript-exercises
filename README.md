@@ -6,6 +6,8 @@
 
 This repository includes all of my practices from the knowledge I gain from <a href="https://www.freecodecamp.org/learn/javascript-v9/">JavaScript Certification of freeCodeCamp</a>.
 - JavaScript Fundamentals (Varialbles, strings, booleans, etc...)
+- Higher Order Functions and Callbacks
+- DOM manipulation and events
 
 ## Getting Started
 
