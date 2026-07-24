@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --bg-color: beige;
+   --main-color: tomato;
+   --accent-color: crimson;
+   --text-dark: #333;
+   --text-light: #eee;
+   --l-font: 40px;
+   --m-font: 25px;
+   --s-font: 18px;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+   color: var(--text-dark);
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+}
+
+h1 {
+   font-size: var(--l-font);
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+p {
+   font-size: var(--s-font);
+   margin-bottom: 20px;
+}
+
+li {
+   list-style: none;
+}
+
+input {
+   width: 100%;
+   display: block;
+}
+
+.container {
+   width: 550px;
+   margin: 0 auto;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+
+   .task-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      #task-input {
+         padding: 10px;
+         font-size: var(--s-font);
+         border-radius: 10px;
+         border: 1px solid var(--main-color);
+      }
+
+      #task-input:focus {
+         outline: 1px solid var(--accent-color);
+      }
+
+      #add-task-btn {
+         background-color: green;
+         color: var(--text-light);
+         font-size: var(--s-font);
+         border: none;
+         border-radius: 10px;
+         cursor: pointer;
+         width: 30%;
+         display: block;
+         transition: 0.2s ease-in;
+      }
+
+      #add-task-btn:hover {
+         background-color: darkgreen;
+      }
+      #add-task-btn:active {
+         background-color: green;
+      }
+   }
+
+   #task-list {
+      .task {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 10px;
+         background-color: #fff;
+         padding: 20px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         border: 1px solid var(--accent-color);
+      }
+
+      .delete-btn {
+         border: none;
+         background-color: transparent;
+         font-size: var(--m-font);
+         color: var(--accent-color);
+         cursor: pointer;
+         transition: 0.2s ease-in;
+         padding: 10px;
+      }
+
+      .delete-btn:hover {
+         color: red;
+      }
+      .delete-btn:active {
+         color: var(--accent-color);
+      }
+   }
+}
